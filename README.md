@@ -56,4 +56,9 @@ Task-Management-Application/
 ├── script.js
 └── README.md
 
+-   `index.html`: The main HTML file for the application.
+-   `style.css`: The CSS file for styling the application.
+-   `script.js`: The JavaScript file for handling the application logic.
+-   `README.md`: This file, providing information about the application.
+
 
