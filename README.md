@@ -49,3 +49,11 @@ This is a simple Task Management Application built using HTML, CSS, and JavaScri
     -   Click the "Pending" or "Completed" button in the status column to change the task's status.
 
 ## File Structure
+
+Task-Management-Application/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+
