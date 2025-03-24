@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Task Management Application</title>
+</head>
+<body>
+
+    <!-- Header --> 
+    <center>
+        <section class="header">
+            <form class="taskform" id="taskForm">
+                <h1>Task Application System</h1>
+                <input type="text" id="taskName" placeholder="Task Name" required>
+                <textarea id="description" placeholder="Description"></textarea>
+                <input type="date" id="dueDate">
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+    </center>
+
+    <!-- filter-section -->
+    <center>
+        <section class="filter-section">
+            <select id="statusFilter">
+                <option value="all">All Tasks</option>
+                <option value="pending">Pending Tasks</option>
+                <option value="completed">Completed Tasks</option>
+            </select>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search Tasks">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </section>
+    </center>
+
+    <!-- view table -->
+     
+    <div class="container">
+        <center>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th class="des">Description</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="taskList"></tbody>
+        </table></center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
